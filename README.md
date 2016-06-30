@@ -1,5 +1,5 @@
 # lazyload
-####LazyLoad allows you to defer image loading until the user scrolls down to each image..
+####LazyLoad allows you to defer image loading until the user scrolls down to each image.
 
 
 	/**
