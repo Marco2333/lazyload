@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style>
+		img {
+			display: block;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div id="lazyload">
+		<img src="" alt="" data-src="img/0011.jpg">
+		<img src="" alt="" data-src="img/002.jpg">
+		<img src="" alt="" data-src="img/003.jpg">
+		<img src="" alt="" data-src="img/004.jpg">
+		<img src="" alt="" data-src="img/005.jpg">
+		<img src="" alt="" data-src="img/006.jpg">
+		<img src="" alt="" data-src="img/007.jpg">
+		<img src="" alt="" data-src="img/008.jpg">
+		<img src="" alt="" data-src="img/009.jpg">
+		<img src="" alt="" data-src="img/010.jpg">
+		<img src="" alt="" data-src="img/011.jpg">
+		<img src="" alt="" data-src="img/012.jpg">
+		<img src="" alt="" data-src="img/013.jpg">
+		<img src="" alt="" data-src="img/014.jpg">
+		<img src="" alt="" data-src="img/015.jpg">
+	</div>
+	<script src="lib/lazyload.js"></script>
+	<script>
+		window.onload = function() {
+			new LazyLoad(
+				// 加载出错的处理函数，this指向加载出错的图片
+				function() {
+					this.style.display = "none";
+				}
+			).init();
+		}
+	</script>
+</body>
+</html>
